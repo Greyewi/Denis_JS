@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>List</h1>
+        <input class="search"  type="text" placeholder="Поиск" oninput="search(event)" >
+       
+        <div class="menu">
+            <input type="text" placeholder="name" class="name">    
+            <input type="text" placeholder="dscription" class="dscription">
+            <input type="text" placeholder="rathinh" class="rathing">
+            <button class="add" onclick="newElement()">Добавить</button>
+            <button class="edit"onclick="chekbox()">Редактировать </button>
+            <button class="cancel">Отменить  </button>
+        </div>
+        <table class="list">
+            <thead>
+                <tr>
+                    <th data-sort="true" onclick="sort('id')" >id</th>
+                    <th data-sort="true" onclick="sort('name')" >name</th>
+                    <th data-sort="true" onclick="sort('dscription')">dscription</th>
+                    <th data-sort="true" onclick="sort('rathing')">rathing</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+
+            </tbody>
+        </table>
+    </div>
+
+    <style>
+        .wrapper{
+            width: 600px;
+            font-size: 30px;
+            margin: 0 auto;
+        }
+
+
+
+
+
+        
+    </style>
+
+
+    
+    <script src="list.js"></script>
+</body>
+</html>
