@@ -16,7 +16,9 @@ body{
     padding:0;
     margin: 0;
 }
-
+p{
+    margin: 0;
+}
 .main{
     width: 100%;
     height: 100%;
@@ -33,13 +35,22 @@ body{
     justify-content: center;
 }
 .game_list{
+   
+  
     text-align: center;
     width: 50%;
     display: inline-block;
+    
   
 }
 
+img{
+    width: 150px;
+    height: 210px;
+}
 .block{
+    
+ 
     align-items: center;
     width: 190px;
     text-align: center;
@@ -96,6 +107,7 @@ button{
     font-family: Ubuntu_condensed;
 }
 
+
 a{
     color: #60ccff;
 }
@@ -106,7 +118,9 @@ span{
  margin-right: 5px;
 }
 
-
+.span_price{
+    color: #949494;
+}
 .added_game{
     color: white;
     display: flex;
@@ -118,13 +132,13 @@ span{
 }
 
 
-.container_basket > .added_game:hover{
+.container_basket  .added_game:hover{
     background-color:#5a5a5a;
     
     
 }
 
-.container_basket >.added_game:hover .close{
+.container_basket .added_game:hover .close{
     display: block;
     cursor: pointer;
       
